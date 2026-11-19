@@ -1,6 +1,6 @@
 {
   "name": "@answerdotai/answerstyle",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Shared styles and browser behavior for semantic HTML",
   "license": "Apache-2.0",
   "repository": {"type": "git", "url": "git+https://github.com/AnswerDotAI/answerstyle.git"},
