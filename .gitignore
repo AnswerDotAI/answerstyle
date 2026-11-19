@@ -1,4 +1,6 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+.sesskey
+tags
+meta/
 
 # dependencies
 /node_modules
@@ -46,3 +48,12 @@ next-env.d.ts
 .eslintcache
 .turbo
 .swc
+
+# Python and notebook builds
+/.venv/
+/dist/
+*.egg-info/
+__pycache__/
+.ipynb_checkpoints/
+/_docs/
+/_proc/

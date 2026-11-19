@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "answerstyle"
+dynamic = ["version"]
+description = "Shared styles and browser behavior for semantic HTML"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+
+[project.optional-dependencies]
+dev = ["nbdev>=3.3.28", "numpy", "scipy", "matplotlib", "pandas", "python-fasthtml"]
+
+[project.urls]
+Repository = "https://github.com/AnswerDotAI/answerstyle"
+
+[tool.setuptools.dynamic]
+version = {attr = "answerstyle.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["answerstyle"]
+
+[tool.setuptools.package-data]
+answerstyle = ["assets/*.css", "assets/*.js", "assets/fonts/*"]
+
+[tool.nbdev]
+exec_all = true
+export_procs = ["answerstyle._build:build_assets_"]
+lib_path = "answerstyle"
+
+[tool.fastship]
+release = "tag"
+version-files = ["package.json"]

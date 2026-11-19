@@ -1,0 +1,22 @@
+{
+  "name": "@answerdotai/answerstyle",
+  "version": "0.1.0",
+  "description": "Shared styles and browser behavior for semantic HTML",
+  "license": "Apache-2.0",
+  "repository": {"type": "git", "url": "git+https://github.com/AnswerDotAI/answerstyle.git"},
+  "type": "module",
+  "files": ["answerstyle/assets"],
+  "exports": {
+    "./styles.css": "./answerstyle/assets/styles.css",
+    "./fonts.css": "./answerstyle/assets/fonts.css",
+    "./fit.js": "./answerstyle/assets/fit.js",
+    "./floating.js": "./answerstyle/assets/floating.js",
+    "./interactions.js": "./answerstyle/assets/interactions.js",
+    "./copy.js": "./answerstyle/assets/copy.js"
+  },
+  "sideEffects": ["**/*.css"],
+  "scripts": {
+    "build": "nbdev-export"
+  },
+  "publishConfig": {"access": "public"}
+}

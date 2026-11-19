@@ -1,0 +1,2 @@
+include DEV.md package.json src/floating.js
+recursive-include nbs *.ipynb *.css *.yml
