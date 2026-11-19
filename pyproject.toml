@@ -16,6 +16,9 @@ dev = ["nbdev>=3.3.28", "numpy", "scipy", "matplotlib", "pandas", "python-fastht
 [project.urls]
 Repository = "https://github.com/AnswerDotAI/answerstyle"
 
+[tool.setuptools]
+include-package-data = false
+
 [tool.setuptools.dynamic]
 version = {attr = "answerstyle.__version__"}
 
